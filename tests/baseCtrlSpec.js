@@ -10,7 +10,7 @@ describe('baseCtrl', function () {
     it('should have a list of repositories', function () {
         var $scope = {};
         var controller = $controller('baseCtrl', { $scope: $scope });
-        expect($scope.repos).toBeDefined();
+        expect($scope.repos.length).toBeGreaterThan(0);
     });
 
 });
