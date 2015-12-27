@@ -67,3 +67,18 @@ nav {
     padding: 0 0.5em 0.15em 0.5em;
     border: 1px solid #fc6;
 }
+#pagination-row {
+    border-top: 1px solid #e0e4e7;
+    text-align: center;
+}
+.pagination>li>a {
+    margin: 0 5px;
+    border-radius: 3px;
+    border: 0 none;
+    background-color: #dde0e2;
+    color: #91a0a9;
+}
+.pagination>li.active>a,
+.pagination>li.active>a:hover {
+    background-color: #30b9e9;
+}

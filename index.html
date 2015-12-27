@@ -14,12 +14,12 @@
 <body ng-app="DockerDash">
 <nav>
     <ul id="utilinav">
-        <li ng-class="{active: isActive('/dash')}"><a href="#/dash"><span class="glyphicon glyphicon-dashboard"></span></a></li>
-        <li ng-class="{active: isActive('/list')}"><a href="#/list"><span class="glyphicon glyphicon-tasks"></span></a></li>
-        <li ng-class="{active: isActive('/calendar')}"><a href="#/calendar"><span class="glyphicon glyphicon-calendar"></span></a></li>
-        <li ng-class="{active: isActive('/user')}"><a href="#/user"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li ng-class="{active: isActive('/cog')}"><a href="#/cog"><span class="glyphicon glyphicon-cog"></span></a></li>
-        <li ng-class="{active: isActive('/align')}"><a href="#/align"><span class="glyphicon glyphicon-align-left"></span></a></li>
+        <li ng-class="{active: isActive('dash')}"><a href="#/dash"><span class="glyphicon glyphicon-dashboard"></span></a></li>
+        <li ng-class="{active: isActive('list')}"><a href="#/list"><span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li ng-class="{active: isActive('calendar')}"><a href="#/calendar"><span class="glyphicon glyphicon-calendar"></span></a></li>
+        <li ng-class="{active: isActive('user')}"><a href="#/user"><span class="glyphicon glyphicon-user"></span></a></li>
+        <li ng-class="{active: isActive('cog')}"><a href="#/cog"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-class="{active: isActive('align')}"><a href="#/align"><span class="glyphicon glyphicon-align-left"></span></a></li>
     </ul>
 </nav>
 <div class="container-fluid" id="viewport">
@@ -34,6 +34,7 @@
 
 
 <script type="text/javascript" src="/src/DockerDash.js"></script>
+<script type="text/javascript" src="/src/repoListService.js"></script>
 <script type="text/javascript" src="/src/repoListCtrl.js"></script>
 <script type="text/javascript" src="/src/notImplementedCtrl.js"></script>
 

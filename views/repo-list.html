@@ -7,8 +7,17 @@
     <button class="btn btn-flat">New Repository</button>
 </div>
 <div class="col-xs-12 pushed">
-    <div class="repo-row" ng-repeat="n in [1,2,3,4,5,6,7,8,9]">
-        <a href="#">account-name / <span class="repo-name">repository-name</span></a> <span class="private-flag">private</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum neque ornare nulla consequat, sit amet sodales purus cursus. Donec sed suscipit augue.</p>
+    <div class="repo-row" ng-repeat="repo in repos">
+        <a href="#">{{repo.account}} / <span class="repo-name">{{repo.name}}</span></a> <span
+            ng-show="repo.private"><span class="private-flag">private</span></span>
+
+        <p>{{repo.description}}</p>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div id="pagination-row">
+        <ul class="pagination">
+            <li ng-repeat="n in pages track by $index" ng-class="{active: $index == page}"><a href="#/list/{{$index + 1}}">{{$index + 1}}</a></li>
+        </ul>
     </div>
 </div>

@@ -7,7 +7,8 @@ describe('repository list service', function () {
     it('should exist', function () {
         expect(repoListService).toBeDefined();
     });
-    it('should have a list of repositories longer than 0', function () {
-        expect(repoListService.repos.length).toBeGreaterThan(0);
+    it('should return a list of repositories from the getPage function', function () {
+        var repos = repoListService.getPage(0);
+        expect(repos.length).toBeGreaterThan(0);
     });
 });
