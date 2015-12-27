@@ -1,5 +1,5 @@
-angular.module('app', [])
-    .controller('baseCtrl', function BaseCtrl($scope) {
+angular.module('DockerDash')
+    .controller('repoListCtrl', function RepoListCtrl($scope) {
         $scope.repos = [];
         for (var i = 0; i < 100; i++) {
             $scope.repos.push({

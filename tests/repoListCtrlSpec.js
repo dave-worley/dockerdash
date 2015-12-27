@@ -1,5 +1,5 @@
-describe('baseCtrl', function () {
-    beforeEach(module('app'));
+describe('repoListCtrl', function () {
+    beforeEach(module('DockerDash'));
 
     var $controller;
 
@@ -9,7 +9,7 @@ describe('baseCtrl', function () {
 
     it('should have a list of repositories', function () {
         var $scope = {};
-        var controller = $controller('baseCtrl', { $scope: $scope });
+        var controller = $controller('repoListCtrl', { $scope: $scope });
         expect($scope.repos.length).toBeGreaterThan(0);
     });
 

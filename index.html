@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DockerDash</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css"/>
+</head>
+<body ng-app="DockerDash">
+<nav>
+    <ul id="utilinav">
+        <li ng-class="{active: isActive('/dash')}"><a href="#/dash"><span class="glyphicon glyphicon-dashboard"></span></a></li>
+        <li ng-class="{active: isActive('/list')}"><a href="#/list"><span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li ng-class="{active: isActive('/calendar')}"><a href="#/calendar"><span class="glyphicon glyphicon-calendar"></span></a></li>
+        <li ng-class="{active: isActive('/user')}"><a href="#/user"><span class="glyphicon glyphicon-user"></span></a></li>
+        <li ng-class="{active: isActive('/cog')}"><a href="#/cog"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-class="{active: isActive('/align')}"><a href="#/align"><span class="glyphicon glyphicon-align-left"></span></a></li>
+    </ul>
+</nav>
+<div class="container-fluid" id="viewport">
+    <div class="row pushed" ng-view></div>
+</div>
+<script type="text/javascript" src="/lib/angular.js"></script>
+<script type="text/javascript" src="/lib/angular-route.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="/src/DockerDash.js"></script>
+<script type="text/javascript" src="/src/repoListCtrl.js"></script>
+<script type="text/javascript" src="/src/notImplementedCtrl.js"></script>
+
+</body>
+</html>
