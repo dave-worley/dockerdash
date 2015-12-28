@@ -20,7 +20,7 @@ angular.module('DockerDash')
             };
 
             var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum neque ornare nulla consequat, sit amet sodales purus cursus. Donec sed suscipit augue.';
-            var accountNames = ['TestUser', 'OtherUser', 'BestUser', 'dave'];
+            var accountNames = ['test-user', 'other-user', 'best-user', 'dave'];
             var repoNames = ['a-cool-repo', 'another-cool-repo', 'best-repo-evar', 'look-ma-more-code', 'never-updated-repo'];
 
             for (var i = 0; i < 100; i++) { // 100 total repositories
