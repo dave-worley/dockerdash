@@ -19,4 +19,4 @@ angular.module('DockerDash', ['ngRoute'])
                 templateUrl: '/views/not-implemented.html',
                 controller: 'notImplementedCtrl'
             })
-    }])
+    }]);
