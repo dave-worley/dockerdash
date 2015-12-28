@@ -11,7 +11,7 @@ angular.module('DockerDash', ['ngRoute'])
                 templateUrl: '/views/repo-list.html',
                 controller: 'repoListCtrl'
             })
-            .when('/list/:page', {
+            .when('/list/:account/:page', {
                 templateUrl: '/views/repo-list.html',
                 controller: 'repoListCtrl'
             })

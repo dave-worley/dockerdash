@@ -8,7 +8,7 @@ describe('repository list service', function () {
         expect(repoListService).toBeDefined();
     });
     it('should return a list of repositories from the getPage function', function () {
-        var repos = repoListService.getPage(0);
+        var repos = repoListService.getPage(0, 'all');
         expect(repos.length).toBeGreaterThan(0);
     });
 });

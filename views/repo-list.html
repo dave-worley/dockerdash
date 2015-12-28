@@ -1,6 +1,5 @@
 <div class="col-xs-4">Filter by:
-    <select name="" id="">
-        <option value="all">All Accounts</option>
+    <select ng-model="account" ng-options="a for a in accountNames" ng-change="updateAccount(account)">
     </select>
 </div>
 <div class="col-xs-8 aside">
@@ -17,7 +16,7 @@
 <div class="col-xs-12">
     <div id="pagination-row">
         <ul class="pagination">
-            <li ng-repeat="n in pages track by $index" ng-class="{active: $index == page}"><a href="#/list/{{$index + 1}}">{{$index + 1}}</a></li>
+            <li ng-repeat="n in pages track by $index" ng-class="{active: $index == page}"><a href="#/list/{{account}}/{{$index + 1}}">{{$index + 1}}</a></li>
         </ul>
     </div>
 </div>
